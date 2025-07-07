@@ -26,3 +26,5 @@ const saveContact = async (req, res) => {
     return res.status(500).json({ error: "Failed to send email" });
   }
 };
+
+module.exports = { saveContact };

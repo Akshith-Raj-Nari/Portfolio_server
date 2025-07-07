@@ -4,7 +4,7 @@
   "description": "This is contact service for my portfolio.",
   "main": "app.js",
   "scripts": {
-    "test": "npm app.js"
+    "start": "node app.js"
   },
   "author": "Akshith Raj Nari",
   "license": "ISC",

@@ -7,10 +7,7 @@ const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/contacts";
 
 const connection = async () => {
   try {
-    await mongoose.connect(MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(MONGO_URI);
     console.log("Connected to Database ✅");
   } catch (error) {
     console.error("Error connecting to Database: ", error);

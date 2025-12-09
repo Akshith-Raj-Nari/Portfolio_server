@@ -14,5 +14,10 @@ connection();
 
 app.use("/api/contact", require("./routes/add_contact"));
 
+// home route
+app.get("/", (req, res) => {
+  res.send("Contact Service is running");
+});
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
